@@ -1,13 +1,14 @@
 import time
 import pandas as pd
 import numpy as np
-#==========================================
 
+<<<<<<< HEAD
 #chicago.csv,new_york_city.csv,washington.csv (city.csv file)
+=======
+>>>>>>> refactoring
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-#==========================================
 
 def get_filters():
     """
@@ -21,7 +22,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
 
 
-    # Get user input for the city (CITY_DATA)
+    # Get user input for the city
     while True:
         city = input('Would you like to see data for Chicago, New York City, or Washington? ').lower()
         if city in CITY_DATA:
@@ -29,7 +30,7 @@ def get_filters():
         else:
             print('Invalid input. Please enter a valid city.')
 
-    # Get user input for the month (Month)
+    # Get user input for the month
     while True:
         month = input('Which month would you like to filter by? (all, january, february, ... , june) ').lower()
         if month in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
@@ -37,7 +38,7 @@ def get_filters():
         else:
             print('Invalid input. Please enter a valid month.')
 
-    # Get user input for the day of week (Week)
+    # Get user input for the day of week
     while True:
         day = input('Which day of the week would you like to filter by? (all, monday, tuesday, ... sunday) ').lower()
         if day in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
@@ -48,7 +49,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-#load_date
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -60,7 +61,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # Load data from the CSV file for the specified city ============
+    # Load data from the CSV file for the specified city
     file_path = CITY_DATA[city]
     df = pd.read_csv(file_path)
 
@@ -92,8 +93,8 @@ def load_data(city, month, day):
 # Make sure to test your code with different inputs to ensure it works correctly.
 
 # The existing code structure provides a framework, and you need to fill in the details based on your specific needs.
-#===================================================
-#time_stats
+
+
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -218,7 +219,6 @@ def main():
         if restart.lower() != 'yes':
             break
 
-#============================================
+
 if __name__ == "__main__":
     main()
-#============================================
