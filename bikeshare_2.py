@@ -93,7 +93,7 @@ def load_data(city, month, day):
 # Make sure to test your code with different inputs to ensure it works correctly.
 
 # The existing code structure provides a framework, and you need to fill in the details based on your specific needs.
-
+#===================================================
 #time_stats
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -116,7 +116,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#station_stats
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
     print('\nCalculating The Most Popular Stations and Trip...\n')
