@@ -1,4 +1,4 @@
-#import
+#import 
 import time
 import pandas as pd
 import numpy as np
@@ -49,7 +49,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+#load_date
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -61,7 +61,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # Load data from the CSV file for the specified city
+    # Load data from the CSV file for the specified city ============
     file_path = CITY_DATA[city]
     df = pd.read_csv(file_path)
 
