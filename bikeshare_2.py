@@ -1,4 +1,8 @@
+<<<<<<< .merge_file_553rKP
 #import time,pandas,numpy
+=======
+#import 
+>>>>>>> .merge_file_sJ4C5s
 import time
 import pandas as pd
 import numpy as np
@@ -49,7 +53,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+#load_date
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -61,7 +65,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # Load data from the CSV file for the specified city
+    # Load data from the CSV file for the specified city ============
     file_path = CITY_DATA[city]
     df = pd.read_csv(file_path)
 
@@ -93,7 +97,7 @@ def load_data(city, month, day):
 # Make sure to test your code with different inputs to ensure it works correctly.
 
 # The existing code structure provides a framework, and you need to fill in the details based on your specific needs.
-
+#===================================================
 #time_stats
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -116,7 +120,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#station_stats
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -219,6 +223,7 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+#============================================
 if __name__ == "__main__":
     main()
+#============================================
