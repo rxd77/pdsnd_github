@@ -1,8 +1,3 @@
-<<<<<<< .merge_file_553rKP
-#import time,pandas,numpy
-=======
-#import 
->>>>>>> .merge_file_sJ4C5s
 import time
 import pandas as pd
 import numpy as np
